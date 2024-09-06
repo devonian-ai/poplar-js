@@ -1,0 +1,30 @@
+{
+  "name": "poplar",
+  "version": "1.0.0",
+  "description": "Pop(plæ)r Protocol: Tools for working with reusable code and data objects",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:cjs": "babel src --out-dir dist/cjs --env-name cjs",
+    "build:esm": "babel src --out-dir dist/esm --env-name esm",
+    "build": "npm run build:cjs && npm run build:esm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4"
+  },
+  "dependencies": {
+    "multiformats": "^13.2.2"
+  }
+}
