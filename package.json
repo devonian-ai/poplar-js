@@ -1,5 +1,5 @@
 {
-  "name": "poplar",
+  "name": "poplar-js",
   "version": "1.0.0",
   "description": "Pop(plæ)r Protocol: Tools for working with reusable code and data objects",
   "main": "dist/cjs/index.js",
